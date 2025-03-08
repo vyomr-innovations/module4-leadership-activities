@@ -1,0 +1,78 @@
+{
+    "L1": {
+        "C25": {
+            "Warm up activity": {
+                "link": "/L1/C25/Warm-up-activity",
+                "name": "Animal Freeze Dance"
+            },
+            "Activity 1": {
+                "link": "/L1/C25/Activity-1",
+                "name": "Find the leadership qualities"
+            },
+            "Activity 2": {
+                "link": "/L1/C25/Activity-2",
+                "name": "A Leader Can, Have, Are"
+            },
+            "Activity 3": {
+                "link": "/L1/C25/Activity-3",
+                "name": "Who's the Leader?"
+            },
+            "Activity 4": {
+                "link": "/L1/C25/Activity-4",
+                "name": "Leadership Detective Challenge"
+            },
+            "Additional Activity 1": {
+                "link": "/L1/C25/Additional-Activity-1",
+                "name": "Watch and Observe"
+            }
+        }
+    },
+    "L2": {
+        "C25": {
+            "Activity 1": {
+                "link": "/L2/C25/Activity-1",
+                "name": "Find the leadership qualities"
+            },
+            "Activity 2": {
+                "link": "/L2/C25/Activity-2",
+                "name": " Leadership Scavenger Hunt"
+            },            
+            "Activity 3": {
+                "link": "/L2/C25/Activity-3",
+                "name": "Leadership Detective Challenge"
+            },
+            "Activity 4": {
+                "link": "/L2/C25/Activity-4",
+                "name": "Building a Strong Team"
+            },
+            "Additional Activity 1": {
+                "link": "/L2/C25/Additional-Activity-1",
+                "name": "Watch and Observe"
+            }
+        }
+    },
+    "L3" : {
+        "C25" :{
+            "Activity 1": {
+                "link": "/L3/C25/Activity-1",
+                "name": "Find the leadership qualities"
+            },
+            "Activity 2": {
+                "link": "/L3/C25/Activity-2",
+                "name": "Leadership Detective Challenge"
+            },
+            "Activity 3": {
+                "link": "/L3/C25/Activity-3",
+                "name": "Leading the Right Way"
+            },    
+            "Activity 4": {
+                "link": "/L3/C25/Activity-4",
+                "name": "Role Playing Leadership Strategies"
+            },
+            "Additional Activity 1": {
+                "link": "/L3/C25/Additional-Activity-1",
+                "name": "Watch and Observe"
+            }
+        }
+    }
+}

@@ -1,0 +1,31 @@
+.slidesMainContainer {
+    margin-top: 10px;
+}
+
+.slidesMainContainer .heading {
+    margin-bottom: 20px;
+    font-size: 50px;
+    max-width: 600px;
+    color: #1d5e9e;
+    font-weight: 700;
+}
+
+.slidesMainContainer .subHeading {
+    font-size: 21px;
+    width: 700px;
+}
+
+.slidesMainContainer button {
+    background: green;
+    color: white;
+    padding: 8px 10px;
+    font-size: 18px;
+    margin-top: 50px;
+    border: 0px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.slidesMainContainer button:hover{
+    font-size: 19px;
+}
