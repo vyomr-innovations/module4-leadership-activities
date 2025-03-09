@@ -25,6 +25,12 @@
                 "link": "/L1/C25/Additional-Activity-1",
                 "name": "Watch and Observe"
             }
+        },
+        "C26" : {
+            "Activity 2": {
+                "link": "/L1/C26/Activity-2",
+                "name": "Real World Problem Solving"
+            }
         }
     },
     "L2": {
