@@ -1,0 +1,68 @@
+.FillerMainContainer {
+    margin-top: 10px;
+}
+
+.FillerMainContainer .headingOg {
+    margin-bottom: 20px;
+    font-size: 27px;
+    font-weight: 700;
+    max-width: 600px;
+}
+
+.FillerMainContainer .heading {
+    margin-bottom: 20px;
+    font-size: 23px;
+    max-width: 1000px;
+}
+
+.FillerMainContainer .currentObj {
+    width: 350px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.FillerMainContainer button {
+    background: green;
+    color: white;
+    padding: 8px 10px;
+    font-size: 18px;
+    margin-top: 50px;
+    border: 0px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.FillerMainContainer button:hover{
+    font-size: 19px;
+}
+
+
+
+
+
+
+.charImgContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px
+}
+
+.charImgContainer .charImg {
+    width: 100px;
+    border-radius: 50%;
+}
+
+
+.activityEndContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.activityEndContainer .activityEndHeading {
+    font-size: 28px;
+    font-weight: 600;
+}

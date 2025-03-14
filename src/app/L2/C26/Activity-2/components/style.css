@@ -1,0 +1,57 @@
+.slideShowContainer .leftContainer .objText0 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.slideShowContainer .leftContainer .objText {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.slideShowContainer .leftContainer .objImg {
+    width: 70%;
+    border-radius: 10px;
+}
+
+.slideShowContainer .rightContainer .optionsHeading {
+    font-size: 23px;
+    font-weight: 600;
+    margin-bottom: 10px;
+
+}
+
+
+.slideShowContainer .rightContainer .optionImg {
+    border-radius: 10px;
+}
+
+
+.slideShowContainer .rightContainer .optionTxt {
+    font-size: 18px;
+    font-weight: 600;
+    color: green;
+}
+
+.slideShowContainer .rightContainer .optionContainer {
+    border-radius: 10px;
+    text-align: center;
+}
+
+.slideShowContainer .rightContainer .optionContainer:hover {
+    border: 1px solid gray;
+    cursor: pointer;
+}
+
+
+.activityEndContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.activityEndContainer .activityEndHeading {
+    font-size: 28px;
+    font-weight: 600;
+}
