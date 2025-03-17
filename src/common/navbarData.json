@@ -93,6 +93,24 @@
                 "link": "/L3/C25/Additional-Activity-1",
                 "name": "Watch and Observe"
             }
+        },
+        "C26" : {
+            "Activity 1": {
+                "link": "/L3/C26/Activity-1",
+                "name": "Mastering Teamwork"
+            },
+            "Activity 2": {
+                "link": "/L3/C26/Activity-2",
+                "name": "The Social Loafing Challenge"
+            },
+            "Activity 3": {
+                "link": "/L3/C26/Activity-3",
+                "name": "The Science Project"
+            },
+            "Activity 4": {
+                "link": "/L3/C26/Activity-4",
+                "name": "The 30-Second Brain Blitz!"
+            }
         }
     }
 }
