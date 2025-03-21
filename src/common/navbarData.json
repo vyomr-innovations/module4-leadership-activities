@@ -26,10 +26,28 @@
                 "name": "Watch and Observe"
             }
         },
-        "C26" : {
+        "C26": {
             "Activity 2": {
                 "link": "/L1/C26/Activity-2",
                 "name": "Real World Problem Solving"
+            }
+        },
+        "C31": {
+            "Activity 1": {
+                "link": "/L1/C31/Activity-1",
+                "name": "I Messages vs. Blame Game"
+            },
+            "Activity 2": {
+                "link": "/L1/C31/Activity-2",
+                "name": "Expressing Emotions"
+            },
+            "Activity 3": {
+                "link": "/L1/C31/Activity-3",
+                "name": "The Tolerance Tower"
+            },
+            "Activity 4": {
+                "link": "/L1/C31/Activity-4",
+                "name": "Conflict Role-Play"
             }
         }
     },
@@ -42,7 +60,7 @@
             "Activity 2": {
                 "link": "/L2/C25/Activity-2",
                 "name": " Leadership Scavenger Hunt"
-            },            
+            },
             "Activity 3": {
                 "link": "/L2/C25/Activity-3",
                 "name": "Leadership Detective Challenge"
@@ -56,7 +74,7 @@
                 "name": "Watch and Observe"
             }
         },
-        "C26" : {
+        "C26": {
             "Activity 2": {
                 "link": "/L2/C26/Activity-2",
                 "name": "The Great Balloon Challenge"
@@ -71,8 +89,8 @@
             }
         }
     },
-    "L3" : {
-        "C25" :{
+    "L3": {
+        "C25": {
             "Activity 1": {
                 "link": "/L3/C25/Activity-1",
                 "name": "Find the leadership qualities"
@@ -84,7 +102,7 @@
             "Activity 3": {
                 "link": "/L3/C25/Activity-3",
                 "name": "Leading the Right Way"
-            },    
+            },
             "Activity 4": {
                 "link": "/L3/C25/Activity-4",
                 "name": "Role Playing Leadership Strategies"
@@ -94,7 +112,7 @@
                 "name": "Watch and Observe"
             }
         },
-        "C26" : {
+        "C26": {
             "Activity 1": {
                 "link": "/L3/C26/Activity-1",
                 "name": "Mastering Teamwork"
