@@ -10,9 +10,8 @@ import S2_C2 from '../assets/s2/c2.jpeg'
 
 import Image from 'next/image';
 
-import Solution from './Solution'
 import { useState } from 'react'
-
+import jsPDF from "jspdf";
 
 export default function Mystery() {
     const [inputErr, setInputErr] = useState(false)
@@ -82,8 +81,7 @@ export default function Mystery() {
                 makeEmpty = true
             }
             else {
-                alert('Activity completed')
-                // GENERATE PDf as per the obj[0]['c1_questions'], obj[1]['c1_questions'], obj[0]['c2_questions'], obj[1]['c2_questions'], c1Ans, c2Ans
+                generatePDF()
             }
 
             if (makeEmpty) {
@@ -96,6 +94,79 @@ export default function Mystery() {
             setInputErr(true)
         }
     }
+
+
+    const generatePDF = () => {
+        const doc = new jsPDF();
+        let pageHeight = doc.internal.pageSize.height;
+        let margin = 10;
+        let y = margin; // Start position for text
+
+        doc.setFontSize(16);
+        doc.text("Activity : See It from Both Sides!", margin, y);
+        y += 10;
+
+        obj.forEach((scenario, index) => {
+            if (y + 20 > pageHeight) {
+                doc.addPage();
+                y = margin;
+            }
+
+            doc.setFontSize(14);
+            doc.text(scenario.heading, margin, y);
+            y += 10;
+
+            doc.setFontSize(13);
+            doc.text(scenario.c1_obj, margin, y);
+            y += 10;
+
+            doc.setFontSize(13);
+            doc.text(scenario.c2_obj, margin, y);
+            y += 10;
+
+            doc.setFontSize(12);
+            doc.text(`${scenario.c1_name}'s Perspective`, margin, y);
+            y += 10;
+
+            scenario.c1_questions.forEach((q, i) => {
+                if (y + 20 > pageHeight) {
+                    doc.addPage();
+                    y = margin;
+                }
+
+                doc.text(`Q: ${q}`, margin, y);
+                y += 5;
+
+                let wrappedText = doc.splitTextToSize(c1Ans[`s${index}_c1_${i}`] || "No answer provided", 180);
+                doc.text(wrappedText, margin + 5, y);
+                y += wrappedText.length * 5 + 5;
+            });
+
+            doc.text(`${scenario.c2_name}'s Perspective`, margin, y);
+            y += 10;
+
+            scenario.c2_questions.forEach((q, i) => {
+                if (y + 20 > pageHeight) {
+                    doc.addPage();
+                    y = margin;
+                }
+
+                doc.text(`Q: ${q}`, margin, y);
+                y += 5;
+
+                let wrappedText = doc.splitTextToSize(c2Ans[`s${index}_c2_${i}`] || "No answer provided", 180);
+                doc.text(wrappedText, margin + 5, y);
+                y += wrappedText.length * 5 + 5;
+            });
+
+            y += 10;
+        });
+
+        doc.save("See It from Both Sides.pdf");
+    };
+
+
+    
 
     const handleTextBoxChange = (e, char, ansId) => {
         setInputErr(false)

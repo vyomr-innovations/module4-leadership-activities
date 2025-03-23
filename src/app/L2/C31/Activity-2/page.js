@@ -1,6 +1,6 @@
 import './page.css'
 
-import Mystery from './components/Mystery'
+import Com from './components/Com'
 
 export default function Home() {
   return (
@@ -9,7 +9,7 @@ export default function Home() {
         <h1 className="headingContaienr">See It from Both Sides</h1>
       </center>
       <hr />
-      <Mystery />
+      <Com />
     </div>
   );
 }
