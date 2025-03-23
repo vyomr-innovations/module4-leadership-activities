@@ -87,6 +87,24 @@
                 "link": "/L2/C26/Activity-4",
                 "name": "Mastering Teamwork"
             }
+        },
+        "C31":{
+            "Activity 1": {
+                "link": "/L2/C31/Activity-1",
+                "name": "'I' Messages vs. Blame Game"
+            },
+            "Activity 2": {
+                "link": "/L2/C31/Activity-2",
+                "name": "See It from Both Sides!"
+            },
+            "Activity 3": {
+                "link": "/L2/C31/Activity-3",
+                "name": "The Tolerance Tower"
+            },
+            "Activity 4": {
+                "link": "/L2/C31/Activity-4",
+                "name": "Conflict Role-Play"
+            }
         }
     },
     "L3": {

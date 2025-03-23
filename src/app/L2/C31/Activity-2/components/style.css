@@ -1,0 +1,46 @@
+.mainCon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.mainCon .heading{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 22px;
+    font-weight: 600;
+}
+.mainCon .storyCon .storyCon_1 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.mainCon .storyCon .storyCon_1 img {
+    width: 130px;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.mainCon .storyCon .storyCon_1 p {
+    width: 300px;
+    font-size: 18px;
+    margin-right: 50px;
+}
+
+.mainCon table textarea{
+    min-height: 100px;
+}
+.mainCon .submitBtn{
+    background: #076907;
+    color: white;
+    font-size: 19px;
+    font-weight: 600;
+    padding: 5px 14px;
+    margin-top: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
