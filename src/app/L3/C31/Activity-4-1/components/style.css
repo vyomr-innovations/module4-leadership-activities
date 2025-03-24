@@ -1,0 +1,51 @@
+.slidesMainContainer {
+    margin-top: 10px;
+}
+
+.slidesMainContainer .scenario {
+    font-size: 21px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    background: #e1daff;
+    padding: 10px;
+}
+
+.slidesMainContainer .statement {
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+.slidesMainContainer .listCon {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.slidesMainContainer .listCon h2 {
+    font-weight: 600;
+    background: #e1daff;
+    width: 470px;
+    padding: 6px;
+    border-radius: 10px;
+}
+
+.slidesMainContainer button {
+    background: linear-gradient(90deg, #28a745, #218838);
+    color: white;
+    padding: 12px 15px;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 40px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 220px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.slidesMainContainer button:hover {
+    background: linear-gradient(90deg, #218838, #1e7e34);
+    font-size: 19px;
+    transform: scale(1.05);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+}

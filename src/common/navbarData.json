@@ -147,6 +147,28 @@
                 "link": "/L3/C26/Activity-4",
                 "name": "The 30-Second Brain Blitz!"
             }
+        },
+        "C31" : {
+            "Activity 1": {
+                "link": "/L3/C31/Activity-1",
+                "name": "Alpha vs Beta"
+            },
+            "Activity 2": {
+                "link": "/L3/C31/Activity-2",
+                "name": "The Tolerance Tower"
+            },
+            "Activity 3": {
+                "link": "/L3/C31/Activity-3",
+                "name": "'I' Messages vs. Blame Game"
+            },
+            "Activity 4.1": {
+                "link": "/L3/C31/Activity-4-1",
+                "name": "The Art of Respectful Disagreement 1"
+            },
+            "Activity 4.2": {
+                "link": "/L3/C31/Activity-4-2",
+                "name": "The Art of Respectful Disagreement 2"
+            }
         }
     }
 }

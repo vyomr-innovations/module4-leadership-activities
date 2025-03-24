@@ -1,0 +1,83 @@
+.slidesMainContainer {
+    margin-top: 10px;
+}
+
+.slidesMainContainer .scenario {
+    font-size: 21px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    background: #e1daff;
+    padding: 10px;
+}
+
+.slidesMainContainer .statementCon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.slidesMainContainer .statementCon .statement {
+    font-size: 20px;
+    margin-top: 20px;
+    font-weight: 600;
+    max-width: 300px;
+    margin-left: 10px;
+}
+
+
+.slidesMainContainer .char {
+    width: 150px;
+    border-radius: 20px;
+}
+
+.slidesMainContainer .listCon{
+    margin-bottom: 30px;
+    max-width: 750px;
+}
+
+.slidesMainContainer .listCon h2 {
+    font-weight: 600;
+    background: #e1daff;
+    max-width: 750px;
+    padding: 6px;
+    border-radius: 10px;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.slidesMainContainer .submitBtn,
+.slidesMainContainer .optionsCon button {
+    background: linear-gradient(90deg, #28a745, #218838);
+    color: white;
+    padding: 12px 15px;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 40px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 220px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.slidesMainContainer .optionsCon button {
+    margin: 10px;
+    background: #0f72af;
+    width: fit-content;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.slidesMainContainer .optionsCon button:hover {
+    font-size: 19px;
+}
+
+.slidesMainContainer .submitBtn:hover {
+    background: linear-gradient(90deg, #218838, #1e7e34);
+    font-size: 19px;
+    transform: scale(1.05);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+}
