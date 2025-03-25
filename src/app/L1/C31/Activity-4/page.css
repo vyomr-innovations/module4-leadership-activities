@@ -9,7 +9,7 @@
     font-weight: 600;
     color: #7f1158;
     letter-spacing: 2px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    text-shadow: 2px 2px 4px rgb(0 0 0 / 30%);
     margin-top: 20px;
     margin-bottom: 20px;
 }

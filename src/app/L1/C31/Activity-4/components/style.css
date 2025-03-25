@@ -18,7 +18,7 @@
 .slidesMainContainer .currentObj {
     width: 350px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
 }
 
 .slidesMainContainer button {
@@ -27,7 +27,7 @@
     padding: 8px 10px;
     font-size: 18px;
     margin-top: 50px;
-    border: 0px;
+    border: 0;
     border-radius: 10px;
     cursor: pointer;
     width: 200px;
@@ -55,7 +55,7 @@
     text-align: left;
     display: flex;
     align-items: center;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
 }
 
 .slidesMainContainer .rightCon .solutionPara .sp1 {
@@ -65,5 +65,5 @@
     padding: 8px;
     border-radius: 6px;
     margin-right: 10px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
 }
