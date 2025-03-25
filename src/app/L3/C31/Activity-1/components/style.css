@@ -1,0 +1,76 @@
+.slidesMainContainer {
+    margin-top: 10px;
+}
+
+.slidesMainContainer .scenario {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    background: #e1daff;
+    padding: 10px;
+}
+
+.slidesMainContainer .scenarioT {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 30px;
+    max-width: 1000px;
+}
+
+.slidesMainContainer .leftCon{
+    border: 0px 1px 0px 0px;
+    border-style: solid;
+    border-color: black;
+}
+
+.slidesMainContainer .grpHeading {
+    background: #e1daff;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 800;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.slidesMainContainer .questionContaienr{
+    margin-bottom: 30px;
+}
+
+
+.slidesMainContainer .questionContaienr p {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+
+.slidesMainContainer .questionContaienr textarea{
+    min-height: 60px;
+}
+
+.slidesMainContainer button {
+    background: linear-gradient(90deg, #28a745, #218838);
+    color: white;
+    padding: 12px 15px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 220px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.slidesMainContainer button:hover {
+    font-size: 19px;
+}
+
+.slidesMainContainer .rightCon input {
+    width: 100%;
+    background: white;
+    color: black;
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 10px;
+}
