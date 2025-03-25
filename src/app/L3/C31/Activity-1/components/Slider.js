@@ -11,8 +11,8 @@ export default function Slider() {
     const [allAns, setAllAns] = useState({})
     const obj = [
         {
-            scenario: "The Playground Equipment Dilemma",
-            scenarioT: "The school is getting new playground equipment. Most students (Alpha group) want a new basketball court. A smaller group (Beta group) prefers a quiet reading area because not everyone enjoys sports.",
+            scenario: "Making the Most of New Playground Space",
+            scenarioT: "The school has recently expanded, and there is now extra space available. Students have the opportunity to help decide how to use it. Most students (Delta group) want to build a new basketball court to encourage teamwork and physical activity. A smaller group (Sigma group) prefers a quiet reading area because not everyone enjoys sports. ",
             questions: [
                 "Why does your group believe a basketball court is the best choice?",
                 "Why is your group’s choice important?",
@@ -21,7 +21,7 @@ export default function Slider() {
         },
         {
             scenario: "The Community Safety Debate",
-            scenarioT: "A local town is deciding on a new safety rule. The majority (Alpha group) wants to set a curfew for all kids under 14 after 8 PM, arguing that it will keep them safe. A smaller group (Beta group) believes kids should be allowed to stay out later with parental permission, saying it’s unfair to restrict responsible kids.",
+            scenarioT: "A local town is deciding on a new safety rule. The majority (Delta group) wants to set a curfew for all kids under 14 after 8 PM, arguing that it will keep them safe. A smaller group (Sigma group) believes kids should be allowed to stay out later with parental permission, saying it’s unfair to restrict responsible kids.",
             questions: [
                 "How does your group feel about the curfew?",
                 "Why does your group think this is the best solution?",
@@ -30,6 +30,7 @@ export default function Slider() {
         }
     ]
 
+    const s1_grp2_q1 = "Why does your group prefer a quiet reading area instead?"
 
     const handleTextBoxChange = (e, groupId, ansIndex) => {
         setErr(false)
@@ -58,16 +59,16 @@ export default function Slider() {
         }
     }
 
-
+    
 
     function isValidatedAllAns() {
         let isValid = false
         let s = currentObjIndex === 0 ? 's0' : 's1'
-        if (allAns[s] && allAns[s]['alpha'] && allAns[s]['beta']) {
-            if (Object.entries(allAns[s]['alpha']).length == 3 && Object.entries(allAns[s]['beta']).length == 3) {
-                let noneOfThemAreEmpty_alpha = Object.values(allAns[s]['alpha']).every(value => Boolean(value));
-                let noneOfThemAreEmpty_beta = Object.values(allAns[s]['beta']).every(value => Boolean(value));
-                if (noneOfThemAreEmpty_alpha && noneOfThemAreEmpty_beta) {
+        if (allAns[s] && allAns[s]['delta'] && allAns[s]['sigma']) {
+            if (Object.entries(allAns[s]['delta']).length == 3 && Object.entries(allAns[s]['sigma']).length == 3) {
+                let noneOfThemAreEmpty_delta = Object.values(allAns[s]['delta']).every(value => Boolean(value));
+                let noneOfThemAreEmpty_sigma = Object.values(allAns[s]['sigma']).every(value => Boolean(value));
+                if (noneOfThemAreEmpty_delta && noneOfThemAreEmpty_sigma) {
                     isValid = true
                 }
             }
@@ -107,7 +108,7 @@ export default function Slider() {
         let y = 10;
 
         doc.setFontSize(16);
-        doc.text("Alpha vs Beta", 10, y);
+        doc.text("Delta vs Sigma", 10, y);
         y += 10;
 
         obj.forEach((scenario, index) => {
@@ -126,9 +127,9 @@ export default function Slider() {
             doc.text(wrappedDesc, 10, y);
             y += wrappedDesc.length * 7;
 
-            ["alpha", "beta"].forEach((group) => {
+            ["delta", "sigma"].forEach((group) => {
                 doc.setFontSize(13);
-                doc.text(`${group === "alpha" ? "Alpha Group" : "Beta Group"}`, 10, y);
+                doc.text(`${group === "delta" ? "Delta Group" : "Sigma Group"}`, 10, y);
                 y += 7;
 
                 let answer = Object.values(responses[group] || {}).join(" ")
@@ -144,7 +145,7 @@ export default function Slider() {
             });
         });
 
-        doc.save("Alpha vs Beta.pdf");
+        doc.save("Delta vs Sigma.pdf");
     };
 
 
@@ -155,24 +156,26 @@ export default function Slider() {
 
             <div className="flex gap-4">
                 <div className="w-1/2 p-4 leftCon">
-                    <h1 className='grpHeading'>Alpha Group</h1>
+                    <h1 className='grpHeading'>Delta Group</h1>
                     {obj[currentObjIndex]["questions"].map((question, index) => (
                         <div key={index} className='questionContaienr'>
                             <p>{question}</p>
                             <textarea
-                                onChange={(e) => handleTextBoxChange(e, 'alpha', index)}
+                                onChange={(e) => handleTextBoxChange(e, 'delta', index)}
                                 className="w-full h-10 border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-blue-500">
                             </textarea>
                         </div>
                     ))}
                 </div>
                 <div className="w-1/2 p-4 rightCon">
-                    <h1 className='grpHeading'>Beta Group</h1>
+                    <h1 className='grpHeading'>Sigma Group</h1>
                     {obj[currentObjIndex]["questions"].map((question, index) => (
                         <div key={index} className='questionContaienr'>
-                            <p>{question}</p>
+                            <p>
+                                {index === 0 ? s1_grp2_q1 : question}
+                            </p>
                             <textarea
-                                onChange={(e) => handleTextBoxChange(e, 'beta', index)}
+                                onChange={(e) => handleTextBoxChange(e, 'sigma', index)}
                                 className="w-full h-10 border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-blue-500">
                             </textarea>
                         </div>

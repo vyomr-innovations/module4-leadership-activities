@@ -23,14 +23,14 @@ export default function Mystery() {
             c1: S1_C1,
             c2: S1_C2,
             heading: "Grandma’s Birthday Dinner",
-            c1_name: "Emma",
+            c1_name: "Lena",
             c2_name: "Ryan",
-            c1_obj: "Emma wants to take Grandma to her favorite restaurant because it has her favorite soup.",
+            c1_obj: "Lena wants to take Grandma to Grandma’s favorite restaurant because it serves her favorite soup.",
             c2_obj: "Ryan wants to have a home-cooked dinner because Grandma always says she loves family meals.",
             c1_questions: [
-                "Why does Emma feel taking grandma to a restaurant is a better idea?",
-                "What solution would be fair as per Emma?",
-                "How can Emma show open-mindedness?"
+                "Why does Lena feel taking grandma to a restaurant is a better idea?",
+                "What solution would be fair as per Lena?",
+                "How can Lena show open-mindedness?"
             ],
             c2_questions: [
                 "Why does Ryan feel having a home-cooked dinner is a better idea?",

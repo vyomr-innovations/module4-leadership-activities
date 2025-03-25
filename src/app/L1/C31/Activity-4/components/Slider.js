@@ -43,11 +43,12 @@ export default function Slider() {
             "Emma realizes it was an accident and says, It’s okay, let’s just clean it up!"
         ],
         [
-            "Mia takes a deep breath.",
-            "Instead of yelling, Mia says: I feel upset because I like sitting here.",
-            "Mia and Liam think of solutions: They can take turns, find another seat, or sit together.",
-            "Mia decides to ask Liam, Can we take turns sitting here each day?",
-            "Liam agrees, and they solve the problem without arguing",
+
+            "Mia takes a deep breath and counts to three before reacting.",
+            "Instead of blaming Lucas, she uses an 'I' statement: 'I feel upset because I need help cleaning our room.'",
+            "They think of ways to solve the problem—maybe making it a fun game, setting a timer, or asking an adult for help.",
+            "Mia says, 'Let’s race! Let’s see who can pick up five toys the fastest!' Lucas agrees and starts cleaning.",
+            "Mia sees that Lucas is trying and says, 'Thanks for helping! Now we can play together before dinner!'"
         ],
         [
             "Zoe takes a deep breath.",

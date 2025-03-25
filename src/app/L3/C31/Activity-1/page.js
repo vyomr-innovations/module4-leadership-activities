@@ -10,7 +10,7 @@ export default function Home() {
     <div className="mainContainer">
       <div className="headingContainer" id="headingContainer">
         <h1 className="mainHeading">
-          Alpha vs Beta
+          Delta vs Sigma
         </h1>
       </div>
       <hr />

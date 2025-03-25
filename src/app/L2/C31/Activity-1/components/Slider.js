@@ -29,7 +29,7 @@ export default function Slider() {
     const objSubHeading = [
         'Sophie and Jack were supposed to work together on a class project. Jack didn’t do his part, and Sophie had to finish everything by herself. Later Sophie said, "Jack, you are so lazy! You never do any work!" Jack got upset.',
         'Olivia had a birthday party and invited many classmates, but she forgot to invite Mia. Mia felt hurt when she found out. The next day, she told Olivia, "You are so mean! You didn’t invite me on purpose!" Olivia looked surprised.',
-        'Noah and his older sister Emma share a bedroom. Emma often leaves her clothes and books all over the floor. One day, Noah got frustrated and said, "Emma, you are so messy! You never clean up after yourself!" Emma feels defensive and unwilling to listen.'
+        'Nora and her older sister Emma share a bedroom. Emma often leaves her clothes and books all over the floor. One day, Nora got frustrated and said, "Emma, you are so messy! You never clean up after yourself!" Emma feels defensive and unwilling to listen.'
     ]
 
     const handleNext = () => {
