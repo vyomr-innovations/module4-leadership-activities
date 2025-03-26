@@ -15,6 +15,143 @@ import Challanges from './Challanges'
 import { useState, useEffect } from "react";
 import { DragDropContext, Droppable, Draggable } from "@hello-pangea/dnd";
 
+// "Activity 3": {
+//     "link": "/L3/C26/Activity-3",
+//     "name": "The Science Project"
+// },
+
+/*
+---------------------------- Class content :
+In any team project, each person has unique strengths. A successful team knows how to use those strengths wisely! Let’s practice more on assigning tasks based on people's skills. Let’s dive into a scenario where three students must work together on a project. 
+After assigning tasks to appropriate students there are 2 challenges to be solved let’s get started!
+
+Scenario:
+Lily, Max, and Ethan are assigned a science project on the solar system. Their task is to create a 3 slide presentation with fun facts about various planets.
+
+Characters Involved:
+Lily – Great at drawing and designing.
+Max – Knows a lot about space and science.
+Ethan – Very organized and good at writing neatly.
+
+List of Tasks:
+Research fun planet facts.
+Write and formulate the content neatly.
+Design and decorate the presentation.
+
+Start assigning students to do the different tasks!
+
+Who should complete Task 1, and why?
+
+Who should complete Task 2, and why?
+
+Who should complete Task 3, and why?
+
+
+
+
+
+
+
+
+
+
+
+
+Challenge 1: If Max is sick and can’t finish his part, who should take over research? And why?
+Options : 
+Lily 
+Ethan
+
+
+
+
+Ethan should take over the research.
+Since Ethan is organized and writes neatly, he can quickly find reliable information and summarize it in a structured way.
+He can ensure the facts are clear and easy to read in the slides.
+
+Q: Why Lily is NOT the Right Choice:
+A: Lily is strong in design but not in research or writing. She might struggle with finding accurate scientific information.
+
+
+Challenge 2: If at the last moment, the teacher asks the team to present the presentation, who is the right choice? And why?
+Options : 
+Lily 
+Max
+Ethan
+
+
+Max is the Right Choice: 
+Since Max knows a lot about space and science and he has done the research, he can confidently explain the facts without just reading from the slides.
+
+Q: Why Ethan is NOT the Right Choice:
+A: Ethan is organized and writes neatly, but he may not have deep knowledge of space to explain concepts clearly.
+If someone asks a follow-up question, Ethan might struggle to answer beyond what’s written on the slides.
+
+Q: Why Lily is NOT the Right Choice:
+A: Lily focused on design, so she might not be familiar with all the facts in detail.
+
+
+
+
+Ask the student to open activity 3
+
+
+
+
+
+Ask the student to click on the start button.
+In the bottom of the screen all the characters are present.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Encourage the student to answer, and once the student has finaled who will be assigned, ask the student to drag that character and drop it in its respective task box.
+Note: Once a character is placed in a task box, hover over them to view their name and skills.
+
+
+Once done, ask the student to click on the "Complete" button. A popup will come, if the tasks are properly assigned activity will move to the challenge section, otherwise, students must adjust before proceeding.
+
+Answer for teacher : 
+Task 1 : Max 
+Task 2 : Ethan
+Task 3 : Lily 
+
+
+
+
+
+The student has to make the choice by clicking on the student image. 
+If the answer is correct the activity will move to the next challenge, otherwise, students re-think on the answer.
+
+
+
+
+
+
+
+
+
+
+
+
+---------------------------- Teacher write up :
+The student has to make the choice by clicking on the student image. 
+If the answer is correct the activity is completed, otherwise, students re-think on the answer.
+
+*/
 
 
 export default function DragDropOptions() {
