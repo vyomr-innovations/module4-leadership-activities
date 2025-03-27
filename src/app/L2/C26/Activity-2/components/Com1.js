@@ -35,7 +35,7 @@ export default function Com1() {
             img: S3,
             heading: "A Wild Animal is Blocking Your Landing Spot!",
             subHeading: "You're about to land in a forest, but a large bear is near the clearing. You must stay in the air longer until it's safe to land.",
-            ans: 2
+            ans: 3
         }
     ]
 
