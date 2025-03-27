@@ -17,8 +17,8 @@ export default function Slider() {
     ]
     
     const objHeading = [
-        'Imagine your friend comes to school, opens their bag, and realizes they forgot their lunch. They look sad and hungry. What do you think they should do?',
-        'We want to make friendship bracelets for all our classmates, but it’s taking too long. How can we finish them faster?'
+        'It’s time to go home, and you can’t find your jacket! You remember leaving it somewhere, but you don’t know where. What will you do?',
+        'You want to make friendship bracelets for all your classmates, but it’s taking too long. How can you finish them faster?'
     ]
 
     // (Is this leadership, or just kindness? Can small actions make someone a leader?)
