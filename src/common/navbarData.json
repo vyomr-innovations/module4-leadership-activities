@@ -32,6 +32,28 @@
                 "name": "Real World Problem Solving"
             }
         },
+        "C30" :{
+            "Warm up activity": {
+                "link": "/L1/C30/Warm-up-activity",
+                "name": "Mystery Sound Guessing"
+            },
+            "Activity 1": {
+                "link": "/L1/C30/Activity-1",
+                "name": "Consequence Map"
+            },
+            "Activity 2": {
+                "link": "/L1/C30/Activity-2",
+                "name": "Consequences Match"
+            },
+            "Activity 3": {
+                "link": "/L1/C30/Activity-3",
+                "name": "Big Plan to Help at Home"
+            },
+            "Post Class Activity": {
+                "link": "/L1/C30/pca",
+                "name": "My Helping Hands Choice Board"
+            }            
+        },
         "C31": {
             "Activity 1": {
                 "link": "/L1/C31/Activity-1",

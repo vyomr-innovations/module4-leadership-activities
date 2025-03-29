@@ -1,0 +1,58 @@
+.slidesMainContainer {
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+.slidesMainContainer .heading {
+    margin-bottom: 20px;
+    font-size: 25px;
+    font-weight: 600;
+    max-width: 600px;
+}
+
+.slidesMainContainer .subHeading {
+    margin-bottom: 20px;
+    font-size: 23px;
+    max-width: 600px;
+}
+
+.slidesMainContainer .currentObj {
+    width: 350px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+}
+
+.slidesMainContainer button {
+    background: green;
+    color: white;
+    padding: 8px 25px;
+    font-size: 18px;
+    margin-top: 10px;
+    border: 0;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.slidesMainContainer .optMainCon2{
+    align-items: self-start;
+
+}
+.slidesMainContainer .optMainCon2 li{
+    font-size: 21px;
+    max-width: 400px;
+}
+
+.slidesMainContainer button:hover {
+    background: rgb(1, 73, 1);
+}
+
+.slidesMainContainer .optMainCon button {
+    margin: 10px;
+    font-size: 20px;
+    background: #88055a;
+    max-width: 250px;
+}
+
+.slidesMainContainer .optMainCon button:hover {
+    background: #e00092;
+}
