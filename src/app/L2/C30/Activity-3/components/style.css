@@ -1,0 +1,66 @@
+.slidesMainContainer {
+    margin-top: 10px;
+}
+
+.slidesMainContainer .headingOg {
+    margin-bottom: 20px;
+    font-size: 27px;
+    font-weight: 700;
+    max-width: 700px;
+}
+
+.slidesMainContainer .heading {
+    margin-bottom: 20px;
+    font-size: 23px;
+    max-width: 600px;
+}
+
+.slidesMainContainer .currentObj {
+    width: 350px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+}
+
+.slidesMainContainer .buttonS1 {
+    background: green;
+    color: white;
+    padding: 8px 10px;
+    font-size: 18px;
+    margin-top: 50px;
+    border: 0;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 200px;
+    margin-bottom: 30px;
+}
+
+.slidesMainContainer .buttonS1:hover {
+    font-size: 19px;
+}
+
+.slidesMainContainer .rightCon .buttonS1 {
+    background: darkgoldenrod;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.slidesMainContainer .rightCon .buttonS1:hover {
+    background: darkgoldenrod;
+    font-weight: 600;
+    font-size: 22px;
+}
+
+.slidesMainContainer .leftCon,
+.slidesMainContainer .rightCon {
+    border-radius: 10px;
+}
+
+.slidesMainContainer .rightCon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.text-cus1-500 {
+    color: oklch(0.46 0.1 198.78)
+}

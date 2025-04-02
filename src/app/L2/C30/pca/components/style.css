@@ -1,0 +1,8 @@
+.trx{
+    height: 100px;
+}
+
+.t1 thead tr .th1,
+.t1 tbody tr .td1{
+    width: 200px;
+}
