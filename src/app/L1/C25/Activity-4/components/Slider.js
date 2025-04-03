@@ -23,7 +23,7 @@ export default function Slider() {
     const objHeading = [
         'At the end of the day, the classroom is messy, and everyone is rushing to leave.',
         'A student is about to go on stage for a class performance but suddenly feels too nervous to perform.',
-        'At recess, a few younger kids are struggling to carry a heavy box of sports equipment.',
+        "At recess, some kids are trying to carry a big, heavy box of sports equipment, but it's too hard for them to lift.",
         'A good leader can suggest taking turns, setting a timer, or finding another fun activity while they wait.'
     ]
 

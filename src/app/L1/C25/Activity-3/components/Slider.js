@@ -31,7 +31,7 @@ export default function Slider() {
         'A basketball team captain delivering a motivational speech to their teammates before a game.',
         'A zookeeper feeding animals in a zoo.',
         'A cashier scanning groceries at a supermarket.',
-        'A child helping a friend who fell on the playground.'
+        'Ron helping Ria who fell on the playground.'
     ]
 
     // (Is this leadership, or just kindness? Can small actions make someone a leader?)

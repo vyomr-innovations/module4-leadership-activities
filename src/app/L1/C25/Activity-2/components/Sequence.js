@@ -5,28 +5,25 @@ import { useState } from "react";
 import { DragDropContext, Droppable, Draggable } from "@hello-pangea/dnd";
 
 const initialOptions = [
-    { id: "1", text: "Help others", answer: "canOptions" },
-    { id: "2", text: "Confidence", answer: "haveOptions" },
-    { id: "3", text: "Brave", answer: "areOptions" },
-    { id: "4", text: "Solve problems", answer: "canOptions" },
-    { id: "5", text: "Patience", answer: "haveOptions" },
-    { id: "6", text: "Fair", answer: "areOptions" },
-    { id: "8", text: "Honesty", answer: "haveOptions" },
+    { id: "1", text: "Problem-solving", answer: "canOptions" },
+    { id: "2", text: "Confidence", answer: "hasOptions" },
+    { id: "3", text: "Positive", answer: "areOptions" },
+    { id: "4", text: "Encourage others", answer: "canOptions" },
+    { id: "5", text: "Creativity", answer: "hasOptions" },
+    { id: "6", text: "Encouraging", answer: "areOptions" },
+    { id: "7", text: "Take initiative", answer: "canOptions" },
+    { id: "8", text: "Respect for others", answer: "hasOptions" },
     { id: "9", text: "Responsible", answer: "areOptions" },
-    { id: "10", text: "Make decisions", answer: "canOptions" },
-    { id: "11", text: "Kindness", answer: "haveOptions" },
-    { id: "12", text: "Friendly", answer: "areOptions" },
-    { id: "13", text: "Inspire people", answer: "canOptions" },
-    { id: "14", text: "Respect", answer: "haveOptions" },
-    { id: "15", text: "Wise", answer: "areOptions" },
-    { id: "16", text: "Determination", answer: "haveOptions" }
+    { id: "10", text: "Work as a team (Teamwork)", answer: "canOptions" },
+    { id: "11", text: "Bravery", answer: "hasOptions" },
+    { id: "12", text: "Think outside the box", answer: "canOptions" },
 ];
 
 export default function DragDropOptions() {
     const [sections, setSections] = useState({
         options: initialOptions.map(item => ({ ...item, color: "bg-yellow-500" })), // Default yellow
         canOptions: [],
-        haveOptions: [],
+        hasOptions: [],
         areOptions: [],
     });
 
@@ -55,7 +52,7 @@ export default function DragDropOptions() {
         let correctCount = 0;
         let totalCount = 0;
 
-        ["canOptions", "haveOptions", "areOptions"].forEach((sectionKey) => {
+        ["canOptions", "hasOptions", "areOptions"].forEach((sectionKey) => {
             updatedSections[sectionKey] = updatedSections[sectionKey].map(item => {
                 const isCorrect = item.answer === sectionKey;
                 if (isCorrect) correctCount++;
@@ -80,7 +77,7 @@ export default function DragDropOptions() {
 
                 {/* Top Sections */}
                 <div className="grid grid-cols-3 gap-4 w-full">
-                    {["canOptions", "haveOptions", "areOptions"].map((sectionKey) => (
+                    {["canOptions", "hasOptions", "areOptions"].map((sectionKey) => (
                         <Droppable key={sectionKey} droppableId={sectionKey}>
                             {(provided) => (
                                 <div
@@ -92,8 +89,8 @@ export default function DragDropOptions() {
                                         <u>
                                             {sectionKey === "canOptions"
                                                 ? "Can Options"
-                                                : sectionKey === "haveOptions"
-                                                    ? "Have Options"
+                                                : sectionKey === "hasOptions"
+                                                    ? "Has Options"
                                                     : "Are Options"}
                                         </u>
                                     </h2>
