@@ -21,7 +21,7 @@ export default function Slider() {
     ]
 
     const objHeading = [
-        'Your group is working on a class project, but one student is feeling frustrated and says, "I can’t do this. It’s too hard!"',
+        'Your group is working on a class project, but one team member has stopped working.',
         'Your group is making a poster for a class project, but one student keeps taking over and not letting others contribute. Some group members feel left out.',
         'Your class is preparing for a group performance, but some students are nervous and afraid they will forget their lines. They don’t want to go on stage.',
         'Your family and friends are at the beach when you notice a group of younger kids playing too close to deep water. There are no adults nearby watching them.'

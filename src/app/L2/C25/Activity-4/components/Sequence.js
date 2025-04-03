@@ -20,6 +20,8 @@ const initialOptions = [
     { id: "12", text: "Always follows others without thinking", answer: "underminesOptions" },
     { id: "13", text: "Gives honest feedback", answer: "supportOptions" },
     { id: "14", text: "Works alone on personal tasks", answer: "waste" },
+    { id: "15", text: "I Like to work in complete silence.", answer: "waste" },
+    { id: "16", text: "Likes to keep things very organized", answer: "waste" },
 ];
 
 export default function DragDropOptions() {
@@ -31,24 +33,24 @@ export default function DragDropOptions() {
 
     const onDragEnd = (result) => {
         if (!result.destination) return;
-    
+
         const sourceList = [...sections[result.source.droppableId]];
         const destinationList = [...sections[result.destination.droppableId]];
-    
+
         const [movedItem] = sourceList.splice(result.source.index, 1);
-    
+
         // Prevent duplicates by ensuring the item isn't already in the destination list
         if (!destinationList.some(item => item.id === movedItem.id)) {
             destinationList.splice(result.destination.index, 0, movedItem);
         }
-    
+
         setSections({
             ...sections,
             [result.source.droppableId]: sourceList,
             [result.destination.droppableId]: destinationList,
         });
     };
-    
+
 
     const handleSubmit = () => {
         const updatedSections = { ...sections };
@@ -72,6 +74,26 @@ export default function DragDropOptions() {
                 alert("Oops! your answers are incorrect.");
             }
         }, 200)
+    };
+
+    const showSubmitBtn = () => {
+        let show = false;
+
+        if (sections.options.length === 0) {
+            show = true;
+        } else if (sections.options.length === 3) {
+            show = true;
+            for (let i = 0; i < sections.options.length; i++) {
+                if (sections.options[i]["id"] !== "14" &&
+                    sections.options[i]["id"] !== "15" &&
+                    sections.options[i]["id"] !== "16") {
+                    show = false;
+                    break;
+                }
+            }
+        }
+
+        return show;
     };
 
     return (
@@ -120,7 +142,7 @@ export default function DragDropOptions() {
 
 
                 {/* Submit Button (Only when options are empty) */}
-                {(sections.options.length === 0 || (sections.options.length === 1 && sections.options[0]['id'] === '14')) && (
+                {showSubmitBtn() &&
                     <div className="flex justify-center mt-4">
                         <button
                             onClick={handleSubmit}
@@ -129,7 +151,7 @@ export default function DragDropOptions() {
                             Submit
                         </button>
                     </div>
-                )}
+                }
 
                 {/* Bottom Options Section */}
                 <div className="absolute bottom-10 w-full flex justify-center p-2 bg-blue-500">
