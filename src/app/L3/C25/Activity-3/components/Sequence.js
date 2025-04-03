@@ -5,18 +5,20 @@ import { useState } from "react";
 import { DragDropContext, Droppable, Draggable } from "@hello-pangea/dnd";
 
 const initialOptions = [
-    { id: "1", text:"Encourages team members", answer: "boostsMorale" },
-    { id: "2", text:"Ignores team ideas", answer: "hindersMorale" },
-    { id: "3", text:"Shares responsibilities fairly", answer: "boostsMorale" },
-    { id: "4", text:"Blames others unfairly", answer: "hindersMorale" },
-    { id: "5", text:"Listens to ideas", answer: "boostsMorale" },
-    { id: "6", text:"Excludes certain members", answer: "hindersMorale" },
-    { id: "7", text:"Talks negatively often", answer: "hindersMorale" },
-    { id: "8", text:"Avoids responsibility", answer: "hindersMorale" },
-    { id: "9", text:"Helps struggling teammates", answer: "boostsMorale" },
-    { id: "10", text:"Appreciates others' efforts", answer: "boostsMorale" },
-    { id: "11", text:"Stays positive always", answer: "boostsMorale" },
-    { id: "12", text:"Never takes breaks", answer: "waste" },    
+    { id: "1", text: "Encourages team members", answer: "boostsMorale" },
+    { id: "2", text: "Ignores team ideas", answer: "hindersMorale" },
+    { id: "3", text: "Shares responsibilities fairly", answer: "boostsMorale" },
+    { id: "4", text: "Blames others unfairly", answer: "hindersMorale" },
+    { id: "5", text: "Listens to ideas", answer: "boostsMorale" },
+    { id: "6", text: "Excludes certain members", answer: "hindersMorale" },
+    { id: "7", text: "Talks negatively often", answer: "hindersMorale" },
+    { id: "8", text: "Avoids responsibility", answer: "hindersMorale" },
+    { id: "9", text: "Helps struggling teammates", answer: "boostsMorale" },
+    { id: "10", text: "Appreciates others' efforts", answer: "boostsMorale" },
+    { id: "11", text: "Stays positive always", answer: "boostsMorale" },
+    { id: "12", text: "Never takes breaks", answer: "waste" },
+    { id: "13", text: "Always follows the majority", answer: "waste" },
+    { id: "14", text: "Always tries to do everything alone.", answer: "waste" }
 ];
 
 export default function DragDropOptions() {
@@ -28,24 +30,24 @@ export default function DragDropOptions() {
 
     const onDragEnd = (result) => {
         if (!result.destination) return;
-    
+
         const sourceList = [...sections[result.source.droppableId]];
         const destinationList = [...sections[result.destination.droppableId]];
-    
+
         const [movedItem] = sourceList.splice(result.source.index, 1);
-    
+
         // Prevent duplicates by ensuring the item isn't already in the destination list
         if (!destinationList.some(item => item.id === movedItem.id)) {
             destinationList.splice(result.destination.index, 0, movedItem);
         }
-    
+
         setSections({
             ...sections,
             [result.source.droppableId]: sourceList,
             [result.destination.droppableId]: destinationList,
         });
     };
-    
+
 
     const handleSubmit = () => {
         const updatedSections = { ...sections };
@@ -71,6 +73,27 @@ export default function DragDropOptions() {
         }, 200)
     };
 
+
+    const showSubmitBtn = () => {
+        let show = false;
+        
+        if (sections.options.length === 0) {
+            show = true;
+        } else if (sections.options.length === 3) {
+            show = true;
+            for (let i = 0; i < sections.options.length; i++) {
+                if (sections.options[i]["id"] !== "12" && 
+                    sections.options[i]["id"] !== "13" && 
+                    sections.options[i]["id"] !== "14") {
+                    show = false;
+                    break;
+                }
+            }
+        }
+    
+        return show;
+    };
+    
     return (
         <div className="relative h-screen p-5 flex flex-col sequenceConatinerX">
             <DragDropContext onDragEnd={onDragEnd}>
@@ -116,8 +139,8 @@ export default function DragDropOptions() {
                 </div>
 
 
-                {/* Submit Button (Only when options are empty) */}
-                {(sections.options.length === 0 || (sections.options.length === 1 && sections.options[0]['id'] === '12')) && (
+                {/* {(sections.options.length === 0 || (sections.options.length === 1 && sections.options[0]['id'] === '12')) && ( */}
+                {showSubmitBtn() && (
                     <div className="flex justify-center mt-4">
                         <button
                             onClick={handleSubmit}
