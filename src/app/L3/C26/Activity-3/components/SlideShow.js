@@ -165,7 +165,7 @@ export default function SlideShow() {
         <div className="slideShowContainer p-4 space-y-4">
             {quizCompleted ? (
                 <h1 className="text-[30px] font-semibold text-center">
-                    Quiz complete! Your final score is {score}/{objects.length}
+                    Quiz completed! Your final score is {score}/{objects.length}
                 </h1>
             ) : (
                 <div>

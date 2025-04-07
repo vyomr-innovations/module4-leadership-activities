@@ -184,6 +184,24 @@
                 "name": "The 30-Second Brain Blitz!"
             }
         },
+        "C30":{
+            "Warm up activity": {
+                "link": "/L3/C30/Warm-up-activity",
+                "name": "Choose Your Adventure"
+            },
+            "Activity 1": {
+                "link": "/L3/C30/Activity-1",
+                "name": "Power Up Your Decisions"
+            },
+            "Activity 2": {
+                "link": "/L3/C30/Activity-2",
+                "name": "SWOT It Out!"
+            },
+            "Activity 3": {
+                "link": "/L3/C30/Activity-3",
+                "name": "Oops! Let’s Fix That!"
+            }
+        },
         "C31": {
             "Activity 1": {
                 "link": "/L3/C31/Activity-1",
