@@ -4,7 +4,7 @@
 import './style.css'
 
 import Image from 'next/image'
-import S1 from '../assets/S1.jpeg';
+import S1 from '../assets/s1.jpeg';
 
 import { useState } from 'react';
 
